@@ -19,12 +19,11 @@ public class Facture {
 		articles = new ArrayList<LigneArticle>();
 	}
 	
-	public boolean ajouterArticle(Article _a, int _quantite) {
+	public void ajouterArticle(Article _a, int _quantite) {
 		LigneArticle la = new LigneArticle (_a, _quantite);
 		articles.add(la);
-		return true;
 	}
-	
+
 	public List<LigneArticle> soustraireArticle(List<LigneArticle> _aSupprimer) {
 		for (int i = 0; i < this.articles.size(); i++) {
 			for (int j = 0; j < _aSupprimer.size(); j++) {
