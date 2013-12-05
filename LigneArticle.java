@@ -15,6 +15,10 @@ public class LigneArticle {
 		this.escompte = _escompte;
 	}
 	
+	public void setQuantite(int _newQte) {
+		this.quantite = _newQte;
+	}
+	
 	public Article getArticle() {
 		return this.article;
 	}
