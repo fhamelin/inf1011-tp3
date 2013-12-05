@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ArrayList;
 
 public class Catalogue {
 	
 	private static Catalogue instance = null;
-	private List<Article> articles; 
+	private List<Article> articles = new ArrayList(); 
 	
 	private Catalogue() {
 		articles = new ArrayList<Article>();

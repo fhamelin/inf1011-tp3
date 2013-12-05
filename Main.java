@@ -7,8 +7,21 @@ public class Main {
 	
 	private static void creerVente() {
 		Catalogue catalogue = Catalogue.getInstance();
+
+		RegistreClients registre = RegistreClients.getInstance();
+		
 		Article article = catalogue.find("S1");
 		Vente.creerVente(article, 1, new Client("Frederic", "Hamelin", 1));
+		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
+		
+		
+		if (f.ajouterArticle(article, 3))
+		{
+			System.out.println("Yep");
+		}
+		
+		//System.out.print(f.ajouterArticle(article, 3));
+
 	}
 	
 	

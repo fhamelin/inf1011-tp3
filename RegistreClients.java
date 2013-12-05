@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 
 
 public class RegistreClients {
@@ -7,6 +8,7 @@ public class RegistreClients {
 	private List<Client> clients; 
 	
 	private RegistreClients() {
+		clients = new ArrayList<Client>();
 		add_Client("Norris","Chuck",1);
 		add_Client("Stalonne","Sylvester",2);
 		add_Client("LeClown","Bozo",3);
