@@ -14,10 +14,12 @@ public class Main {
 		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
 		
 		
-		if (f.ajouterArticle(article, 1));
+		if (f.ajouterArticle(article, 3))
 		{
 			System.out.println("Yep");
 		}
+		
+		//System.out.print(f.ajouterArticle(article, 3));
 	}
 	
 	private void creerRetour() {}
