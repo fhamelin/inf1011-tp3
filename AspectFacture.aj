@@ -18,4 +18,12 @@ public aspect AspectFacture
 			return false;
 		}
 	}
+	
+	after (Article a, int qte) : callCreationFactureAspect(a, qte)
+	{
+		int qteActuelle;
+		qteActuelle = a.get_quantite() - qte;
+		a.set_quantite(qteActuelle);
+		System.out.println("La qte en inventaire est rendu à : " + a.get_quantite());
+	}
 }
