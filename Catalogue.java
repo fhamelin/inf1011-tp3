@@ -1,5 +1,5 @@
 import java.util.List;
-
+import java.util.ArrayList;
 
 public class Catalogue {
 	
@@ -7,6 +7,7 @@ public class Catalogue {
 	private List<Article> articles; 
 	
 	private Catalogue() {
+		articles = new ArrayList<Article>();
 		add_Article("S1","Ski",2,99.99);
 		add_Article("R1","Raquette",12,15.99);
 		add_Article("B1","Baton",100,20.00);

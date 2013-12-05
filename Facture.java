@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 
 
 public class Facture {
@@ -14,10 +15,12 @@ public class Facture {
 	public Facture(int _numero, Client _client) {
 		this.numero = _numero;
 		this.client = _client;
+		articles = new ArrayList<LigneArticle>();
 	}
 	
-	public void ajouterArticle(Article _a, int _quantite) {
+	public boolean ajouterArticle(Article _a, int _quantite) {
 		LigneArticle la = new LigneArticle (_a, _quantite);
 		articles.add(la);
+		return true;
 	}
 }

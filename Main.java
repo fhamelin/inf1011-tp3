@@ -2,16 +2,19 @@
 public class Main {
 
 	public static void main(String[] args) {
-		
+		creerVente();
 	}
 	
-	private void creerVente() {
+	private static void creerVente() {
 		Catalogue catalogue = Catalogue.getInstance();
-		Article article = catalogue.find("12345");
+		Article article = catalogue.find("S1");
 		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
 		
 		
-		f.ajouterArticle(article, 1);
+		if (f.ajouterArticle(article, 3))
+		{
+			System.out.println("Yep");
+		}
 	}
 	
 	private void creerRetour() {}
