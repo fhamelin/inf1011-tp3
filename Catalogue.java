@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class Catalogue {
 	
 	private static Catalogue instance = null;
-	private List<Article> articles; 
+	private List<Article> articles = new ArrayList(); 
 	
 	private Catalogue() {
 		add_Article("S1","Ski",2,99.99);
