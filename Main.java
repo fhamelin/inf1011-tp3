@@ -11,7 +11,7 @@ public class Main {
 		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
 		
 		
-		if (f.ajouterArticle(article, 3))
+		if (f.ajouterArticle(article, 1));
 		{
 			System.out.println("Yep");
 		}

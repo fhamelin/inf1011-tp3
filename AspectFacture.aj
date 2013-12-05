@@ -2,7 +2,7 @@
 public aspect AspectFacture 
 {
 	pointcut callCreationFactureAspect(Article a, int qte) :
-		call(void Facture.ajouterArticle(Article, int)) && args(a, qte);
+		call(* Facture.ajouterArticle(Article, int)) && args(a, qte);
 	
 	
 	boolean around(Article a, int qte) : callCreationFactureAspect(a, qte)
