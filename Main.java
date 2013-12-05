@@ -11,6 +11,7 @@ public class Main {
 		RegistreClients registre = RegistreClients.getInstance();
 		
 		Article article = catalogue.find("S1");
+		Vente.creerVente(article, 1, new Client("Frederic", "Hamelin", 1));
 		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
 		
 		
@@ -20,7 +21,8 @@ public class Main {
 		}
 		
 		//System.out.print(f.ajouterArticle(article, 3));
+
 	}
 	
-	private void creerRetour() {}
+	
 }

@@ -14,4 +14,8 @@ public class LigneArticle {
 	public void setEscompte(double _escompte) {
 		this.escompte = _escompte;
 	}
+	
+	public Article getArticle() {
+		return this.article;
+	}
 }
