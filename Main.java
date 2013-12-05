@@ -7,6 +7,9 @@ public class Main {
 	
 	private static void creerVente() {
 		Catalogue catalogue = Catalogue.getInstance();
+
+		RegistreClients registre = RegistreClients.getInstance();
+		
 		Article article = catalogue.find("S1");
 		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
 		
