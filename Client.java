@@ -1,8 +1,8 @@
 
 public class Client 
 {
-	int noID, telephone;
-	String nom, prenom, adresse, ville, province, codepostal;
+	private int noID, telephone;
+	private String nom, prenom, adresse, ville, province, codepostal;
 	
 	public Client (String nom, String prenom, int noID)
 	{
