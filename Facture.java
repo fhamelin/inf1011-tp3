@@ -11,6 +11,7 @@ public class Facture {
 	private double tps;
 	private double tvq;
 	private double total;
+	private Facture factureAnnulee;
 	
 	public Facture(int _numero, Client _client) {
 		this.numero = _numero;
@@ -22,5 +23,15 @@ public class Facture {
 		LigneArticle la = new LigneArticle (_a, _quantite);
 		articles.add(la);
 		return true;
+	}
+	
+	public List<LigneArticle> soustraireArticle(List<LigneArticle> _aSupprimer) {
+		for (int i = 0; i < this.articles.size(); i++) {
+			for (int j = 0; j < _aSupprimer.size(); j++) {
+				if (this.articles.get(i).getArticle() == _aSupprimer.get(j).getArticle()) {
+					
+				}
+			}
+		}
 	}
 }

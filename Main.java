@@ -8,14 +8,8 @@ public class Main {
 	private static void creerVente() {
 		Catalogue catalogue = Catalogue.getInstance();
 		Article article = catalogue.find("S1");
-		Facture f = new Facture(123123, new Client("Frederic", "Hamelin", 1));
-		
-		
-		if (f.ajouterArticle(article, 3))
-		{
-			System.out.println("Yep");
-		}
+		Vente.creerVente(article, 1, new Client("Frederic", "Hamelin", 1));
 	}
 	
-	private void creerRetour() {}
+	
 }
