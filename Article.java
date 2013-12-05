@@ -16,6 +16,11 @@ public class Article {
 		this.nom = nom;
 	}
 	
+	public void set_quantite(int _qte)
+	{
+		this.quantite = _qte;
+	}
+	
 	public String get_code()
 	{
 		String code = this.code;
