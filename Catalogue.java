@@ -16,10 +16,11 @@ public class Catalogue {
 	}
 	
 	public Article find(String _search) {
-		/*
-		 * 
-		 * blablabla methode pour rechercher un article
-		 */
-		return new Article();
+		for (Article art : articles) {
+			if (art.get_code() == _search) {
+				return art;
+			}
+		}
+		return null;
 	}
 }
