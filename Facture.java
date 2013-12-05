@@ -18,7 +18,7 @@ public class Facture {
 		this.client = _client;
 		articles = new ArrayList<LigneArticle>();
 	}
-	
+
 	public Facture (Facture _f) {
 		this.numero = _f.numero;
 		this.client = _f.client;
@@ -35,6 +35,7 @@ public class Facture {
 		articles.add(la);
 		return true;
 	}
+
 	
 	public void soustraireArticle(List<LigneArticle> _aSupprimer) {
 		int i_size = this.articles.size();
