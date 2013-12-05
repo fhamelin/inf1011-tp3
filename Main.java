@@ -19,9 +19,6 @@ public class Main {
 		{
 			System.out.println("Yep");
 		}
-		
-		//System.out.print(f.ajouterArticle(article, 3));
-
 	}
 	
 	
