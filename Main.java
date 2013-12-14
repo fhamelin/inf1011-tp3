@@ -23,6 +23,7 @@ public class Main {
 		lst = new ArrayList<Article>();
 		lst.add(catalogue.find("P1"));
 		Vente.creerVente(lst, 1, new Client("Simon", "Blanchette", 3));
+		Vente.creerVente(lst, 1, new Client("Simon", "Blanchette", 3));
 		
 		lst = new ArrayList<Article>();
 		lst.add(catalogue.find("B1"));
