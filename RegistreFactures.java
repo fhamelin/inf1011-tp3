@@ -18,4 +18,8 @@ public class RegistreFactures {
 	public void add(Facture _f) {
 		this.factures.add(_f);
 	}
+	
+	public boolean contains(Facture _f) {
+		return this.factures.contains(_f);
+	}
 }
