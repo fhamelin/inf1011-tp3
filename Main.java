@@ -14,7 +14,7 @@ public class Main {
 		
 		List<Article> lst = new ArrayList<Article>();
 		lst.add(catalogue.find("S1"));
-		Facture f = Vente.creerVente(lst, 1, new Client("Frederic", "Hamelin", 1));	
+		Facture f = Vente.creerVente(lst, 1, new Client("Frederic", "Hamelin", 1));
 		
 		lst = new ArrayList<Article>();
 		lst.add(catalogue.find("S1"));

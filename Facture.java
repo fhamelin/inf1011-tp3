@@ -35,7 +35,6 @@ public class Facture {
 		articles.add(la);
 		return true;
 	}
-
 	
 	public void soustraireArticle(List<LigneArticle> _aSupprimer) {
 		int i_size = this.articles.size();
